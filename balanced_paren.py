@@ -16,7 +16,9 @@ class Stack():
         return len(self.list)
 
 def check_braces(expressions):
-
+    # Write your code here
+    # To print results to the standard output you can use print
+    # Example print "Hello wor
     d = {'(' :  0, '[' :  1, '{' : 2,')' : 0, ']' : 1, '}' :2}
     opp = {')' : '(', '}' : '{', ']':'['}
     out = [1]*len(expressions)
@@ -48,7 +50,17 @@ def checkAll(stacks):
     return all([stack.isEmpty() for stack in stacks])
 
 
+##### deviation
 
-def main():
-	s = ['({[]})', '(}{})','()[{}]']
-	check_braces(s)
+
+def find_deviation(v,d):
+    deviation =[]
+    reference = [0]*len(v)
+    for j in v[:d]:
+        reference[j] +=1
+    for i in range(len(v)-d+1):
+        for j in v[i:i+d]:
+
+
+        deviation.append(max(v[i:i+d]) -  min(v[i:i+d]))
+    return max(deviation)

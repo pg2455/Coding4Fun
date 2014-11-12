@@ -1,0 +1,2 @@
+char to ASCII : ord('g')
+ASCII to char : chr(23)

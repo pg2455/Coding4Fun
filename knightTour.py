@@ -40,6 +40,7 @@ def ktour(n,path,u,limit):
     else:
         done = True
     return done
+
 # speed up the process; use a heuristics for searching
 def order_by_avail(n):
     avail_list = []
