@@ -16,9 +16,7 @@ class Stack():
         return len(self.list)
 
 def check_braces(expressions):
-    # Write your code here
-    # To print results to the standard output you can use print
-    # Example print "Hello wor
+
     d = {'(' :  0, '[' :  1, '{' : 2,')' : 0, ']' : 1, '}' :2}
     opp = {')' : '(', '}' : '{', ']':'['}
     out = [1]*len(expressions)
@@ -48,3 +46,9 @@ def check_braces(expressions):
 
 def checkAll(stacks):
     return all([stack.isEmpty() for stack in stacks])
+
+
+
+def main():
+	s = ['({[]})', '(}{})','()[{}]']
+	check_braces(s)

@@ -1,5 +1,9 @@
 from pythonds.basic.queue import Queue
 
+
+## hot potato simulation
+## one who ends up holding potato after num passes is going to leave the queue
+## guess who will be the winner?
 def hot_pot(names, num):
     # create a Queue
     q  =  Queue()
